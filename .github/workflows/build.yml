@@ -37,13 +37,6 @@ jobs:
           enable-plugins: pyside6
           disable-console: true
 
-      - name: Moove assets folder in build folder
-        uses: knicknic/os-specific-run@v1
-        with:
-          macos: mv assets build\
-          linux: mv assets build\
-          windows: mv "assets" "build"
-
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:

@@ -33,8 +33,10 @@ jobs:
         uses: Nuitka/Nuitka-Action@v0.6
         with:
           script-name: main.py
+          standalone: true
           onefile: true
           enable-plugins: pyside6
+          macos-create-app-bundle: true
           disable-console: true
 
       - name: Upload Artifacts

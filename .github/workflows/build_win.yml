@@ -29,8 +29,6 @@ jobs:
         with:
           script-name: main.py
           mingw64: true
-          standalone: true
-          onefile: true
           enable-plugins: pyside6
           windows-icon-from-ico: icon.ico
           disable-console: true

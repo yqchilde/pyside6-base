@@ -40,6 +40,4 @@ jobs:
         with:
           name: mac Build
           path: |
-            build/assets
-            build/*.bin
-            build/*.app/**/*
+            build

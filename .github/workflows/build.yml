@@ -37,6 +37,9 @@ jobs:
           onefile: true
           enable-plugins: pyside6
           macos-create-app-bundle: true
+          macos-app-version: 2.0
+          macos-app-icon: icon.icns
+          windows-icon-from-ico: icon.ico
           disable-console: true
 
       - name: Upload Artifacts
@@ -44,7 +47,6 @@ jobs:
         with:
           name: ${{ runner.os }} Build
           path: |
-            build/assets
             build/*.exe
             build/*.bin
             build/*.app/**/*

@@ -45,6 +45,6 @@ jobs:
         with:
           name: ${{ runner.os }} Build
           path: |
-            build/info.plist
+            build/Info.plist
             build/Resources/*
             build/*.app/*

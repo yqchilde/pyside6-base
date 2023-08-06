@@ -34,7 +34,7 @@ jobs:
           enable-plugins: pyside6
           macos-create-app-bundle: true
           macos-app-version: 2.0
-          macos-app-icon: icon.icns
+          assume-yes-for-download: true
           disable-console: true
 
       - name: Upload Artifacts

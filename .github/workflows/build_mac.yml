@@ -32,7 +32,6 @@ jobs:
       - uses: Nuitka/Nuitka-Action@main
         with:
           script-name: main.py
-          onefile: true
           enable-plugins: pyside6
           disable-console: true
           

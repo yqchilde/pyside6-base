@@ -32,7 +32,6 @@ jobs:
           standalone: true
           onefile: true
           enable-plugins: pyside6
-          macos-create-app-bundle: true
           disable-console: true
 
       - name: Upload Artifacts
@@ -40,4 +39,7 @@ jobs:
         with:
           name: mac Build
           path: |
-            build
+            build/assets
+            build/*.exe
+            build/*.bin
+            build/*.app/**/*

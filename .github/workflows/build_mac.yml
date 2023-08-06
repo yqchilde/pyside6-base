@@ -37,7 +37,7 @@ jobs:
 
       - name: Grant Permissions
         run: |
-          chmod 755 build/*.app/Contents/MacOS/*
+          chmod 755 build/*.app/**/*
           
       # Uploads artifact
       - name: Upload Artifacts
@@ -47,4 +47,4 @@ jobs:
           path: |
             build/Info.plist
             build/Resources/*
-            build/*.app/*
+            build/*.app/**/*

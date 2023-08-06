@@ -41,5 +41,6 @@ jobs:
         with:
           name: macBuild
           path: |
+            build/assets
             build/*.bin
             build/*.app/**/*

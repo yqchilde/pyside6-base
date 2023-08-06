@@ -6,7 +6,11 @@ on:
 
 jobs:
   build:
-    runs-on: macos-13
+    strategy:
+      matrix:
+        os: [macos-12, windows-latest]
+      
+    runs-on: ${{ matrix.os }}
     
     steps:
       - name: Check-out repository

@@ -33,13 +33,12 @@ jobs:
           onefile: true
           enable-plugins: pyside6
           macos-create-app-bundle: true
-          macos-app-version: 2.0
           disable-console: true
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: macBuild
+          name: mac Build
           path: |
             build/assets
             build/*.bin

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-nuitka \
+nuitka3 \
   --standalone \
   --onefile \
   --enable-plugin=pyside6 \

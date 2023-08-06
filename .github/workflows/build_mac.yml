@@ -6,11 +6,7 @@ on:
 
 jobs:
   build:
-    strategy:
-      matrix:
-        os: [macos-latest]
-      
-    runs-on: ${{ matrix.os }}
+    runs-on: macos-latest
     
     steps:
       - name: Check-out repository
@@ -38,6 +34,10 @@ jobs:
           macos-create-app-bundle: true
           macos-app-icon: icon.icns
           disable-console: true
+
+      - name: Grant Permissions
+        run: |
+          chmod 755 build/*.app/Contents/MacOS/*
           
       # Uploads artifact
       - name: Upload Artifacts
@@ -45,4 +45,6 @@ jobs:
         with:
           name: ${{ runner.os }} Build
           path: |
-            build/*
+            build/info.plist
+            build/Resources/*
+            build/*.app/*

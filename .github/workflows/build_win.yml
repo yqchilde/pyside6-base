@@ -32,7 +32,7 @@ jobs:
           standalone: true
           onefile: true
           enable-plugins: pyside6
-          windows-icon-from-ico: icon.ico
+          windows-icon-from-ico: images/icons/logo.ico
           disable-console: true
           enable-console: false
           
